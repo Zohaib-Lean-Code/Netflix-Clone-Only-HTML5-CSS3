@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 100vw;
+    overflow: hidden;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    width: 80vw;
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav .logo h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 0, 13);
+}
+
+nav>.btn button {
+    padding: 12px 23px;
+    background-color: rgb(255, 0, 13);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.header-section {
+    overflow: hidden;
+    max-width: 100vw;
+    height: calc(90vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Responsive Formatting for Heaer-section  */
+@media only screen and (max-width: 550px) {
+    .header-section {
+        text-align: center;
+    }
+}
+
+.header-section>.heading>h1 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 3px;
+}
+
+.header-section .mini-heading h3 {
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-section .input {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.header-section .input input {
+    width: 30%;
+    /* height: 2.8em; */
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background-color: #181616;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Responsive Formatting for input bar  */
+@media only screen and (max-width: 550px) {
+    .header-section .input {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .header-section .input input {
+        width: 80%;
+    }
+
+    .header-section>.heading>h1 {
+        font-size: 20px;
+    }
+}
+
+.header-section .input input::placeholder {
+    color: rgb(150, 135, 135);
+}
+
+.header-section .input button {
+    padding: 12px 17px;
+    background-color: rgb(255, 0, 13);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 5px; */
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.first-section {
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.firstsection-heading h1 {
+    font-size: 25px;
+    /* left: -400px; */
+    bottom: 20px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boxes .box {
+    width: 20%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgb(18, 4, 80), rgb(43, 2, 77));
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.boxes .box:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+@media only screen and (max-width: 950px) {
+    .boxes .box {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .boxes .box {
+        width: 80%;
+    }
+
+}
+
+.boxes .box h1 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boxes .box p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.boxes .box img {
+    height: 70px;
+}
+
+/* Second Section Starts here  */
+.second-section {
+    width: 98.7vw;
+    background-color: #000;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+    overflow: hidden;
+}
+
+.secondsection-heading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    overflow: hidden;
+    color: #fff;
+    padding-left: 25px;
+}
+
+.secondsection-heading .secfirst h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second-section .images {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.images img {
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+
+.images img:hover {
+    transform: scale(1.2);
+    transition: .4s;
+}
+.secund select{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: gray;
+    color: #fff;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 550px) {
+    .second-section {
+        width: 100vw;
+    }
+
+    .second-section .images {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .images img {
+        width: 70%;
+        object-fit: cover;
+        object-position: top right;
+        text-align: center;
+    }
+}
+
+/* Question Section Starts  */
+.question-section {
+    width: 98.7vw;
+    background-color: #000;
+    overflow: hidden;
+    padding: 50px 0px;
+    /* box-sizing: border-box; */
+    color: #fff;
+}
+
+.question-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.question-heading h1 {
+    font-size: 22px;
+}
+
+.question-section .question-boxes {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.question-boxes .question-box {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2a2a;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .question-section {
+        width: 100vw;
+    }
+
+    .question-boxes .question-box {
+        width: 90%;
+    }
+}
+
+.question-box:hover {
+    transform: scale(1.02);
+    transition: .2s ease-in-out;
+}
+
+.question-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.question-box img {
+    height: 50px;
+}
+
+footer {
+    width: 98.7vw;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+footer .footer-first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.footer-heading h3{
+    font-family: Sans-serif;
+    margin: 20px 0;
+}
+.footer-input{
+    width: 100%;
+    text-align: center;
+}
+.footer-input input{
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background-color: #181616;
+    color: #fff;
+    padding: 15px;
+}
+@media only screen and (max-width: 550px){
+    footer{
+        width: 100%;
+    }
+    .footer-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .footer-input input {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .footer-input input {
+        width: 90%;
+    }
+}
+.footer-input button{
+    padding: 12px 17px;
+    background-color: rgb(255, 0, 13);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+.footer-link{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer-link a{
+    color: gray;
+    font-family: Sans-serif;
+}
+
+.footer-second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 110px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.footer-second .footer-mainlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content:space-between;
+    row-gap: 20px;
+}
+@media only screen and (max-width: 550px){
+    .footer-second .footer-mainlinks{
+        text-align: justify;
+    }
+    .footer-second{
+        column-gap: 50px;
+    }
+}
+.footer-mainlinks a{
+    color: gray;
+    font-family: Sans-serif;
+}
+.footer-third{
+    width: 90%;
+    padding: 100px 0;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer-third select{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: gray;
+    color: #fff;
+    font-size: 17px;
+}
+.footer-third h3{
+    font-family: Sans-serif;
+    font-size: 18px;
+}
